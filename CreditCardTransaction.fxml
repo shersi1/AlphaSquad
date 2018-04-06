@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewLogin.TransactionCotnroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0039a6" height="529.0" layoutX="-22.0" layoutY="-19.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="10.0" width="829.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="-7.0" layoutY="-5.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="10.0" width="800.0" />
+      <Label layoutX="51.0" layoutY="109.0" text="Credit Card Number" />
+      <Label layoutX="50.0" layoutY="169.0" text="Expiration Date (MM/YY)" />
+      <Label layoutX="50.0" layoutY="139.0" text="First Name" />
+      <Label layoutX="51.0" layoutY="199.0" text="Last Name" />
+      <Label layoutX="51.0" layoutY="229.0" text="Billing Address Line 1" />
+      <Label layoutX="51.0" layoutY="259.0" text="Billing Address Line 2" />
+      <Label layoutX="51.0" layoutY="289.0" text="City" />
+      <Label layoutX="51.0" layoutY="319.0" text="State/Province" />
+      <Label layoutX="51.0" layoutY="349.0" text="Zip/Postal" />
+      <Label layoutX="51.0" layoutY="379.0" text="Associated Phone Number" />
+      <Label layoutX="51.0" layoutY="409.0" text="E-Mail Address" />
+      <TextField fx:id="FirstFNameField" layoutX="215.0" layoutY="165.0" prefHeight="25.0" prefWidth="520.0" promptText="First Name" />
+      <TextField fx:id="ExpirationDate" layoutX="215.0" layoutY="135.0" prefHeight="25.0" prefWidth="58.0" promptText="Month" />
+      <TextField fx:id="CreditNumField" layoutX="215.0" layoutY="105.0" prefHeight="25.0" prefWidth="520.0" promptText="Credit Card Number" />
+      <TextField fx:id="LastNameField" layoutX="215.0" layoutY="195.0" prefHeight="25.0" prefWidth="520.0" promptText="Last Name" />
+      <TextField fx:id="BillingAddressLine1" layoutX="215.0" layoutY="225.0" prefHeight="25.0" prefWidth="520.0" promptText="Billing Address Line 1" />
+      <TextField fx:id="BillingAddressLine2" layoutX="215.0" layoutY="255.0" prefHeight="25.0" prefWidth="520.0" promptText="Billing Address Line 2" />
+      <TextField fx:id="CityField" layoutX="215.0" layoutY="285.0" prefHeight="25.0" prefWidth="520.0" promptText="City" />
+      <TextField fx:id="StateField" layoutX="215.0" layoutY="315.0" prefHeight="25.0" prefWidth="520.0" promptText="State/Province" />
+      <TextField fx:id="ZipCodeField" layoutX="215.0" layoutY="345.0" prefHeight="25.0" prefWidth="520.0" promptText="Zip/Postal" />
+      <TextField fx:id="PhoneNum" layoutX="215.0" layoutY="375.0" prefHeight="25.0" prefWidth="520.0" promptText="Associated Phone Number" />
+      <TextField fx:id="EmailField" layoutX="215.0" layoutY="405.0" prefHeight="25.0" prefWidth="520.0" promptText="E-Mail Address" />
+      <Label layoutX="51.0" layoutY="62.0" text="Payment Type" />
+      <RadioButton fx:id="VISAbutton" layoutX="212.0" layoutY="62.0" mnemonicParsing="false" text="VISA" />
+      <RadioButton fx:id="MasterCardbutton" layoutX="351.0" layoutY="62.0" mnemonicParsing="false" text="Master Card" />
+      <RadioButton fx:id="DiscoveryButton" layoutX="645.0" layoutY="62.0" mnemonicParsing="false" text="Discovery" />
+      <RadioButton fx:id="AMEXbutton" layoutX="492.0" layoutY="62.0" mnemonicParsing="false" text="American Express" />
+      <Text layoutX="49.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing Payment" wrappingWidth="284.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Year" layoutX="293.0" layoutY="135.0" prefHeight="25.0" prefWidth="58.0" promptText="Year" />
+      <Button fx:id="Pay" layoutX="268.0" layoutY="451.0" mnemonicParsing="false" onAction="#Pay" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: ffcccc;" text="Pay">
+         <effect>
+            <Glow level="0.08" />
+         </effect>
+      </Button>
+      <Button fx:id="Cancel" layoutX="475.0" layoutY="451.0" mnemonicParsing="false" onAction="#CancelButtontoLogin" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: ffcccc;" text="Cancel">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
