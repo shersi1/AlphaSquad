@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.effect.*?>
@@ -12,52 +13,52 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewLogin.LoginController">
    <children>
-      <SplitPane orientation="VERTICAL" prefHeight="418.0" prefWidth="618.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: ffffff;">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="530.0" layoutX="-136.0" layoutY="-56.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="10.0" width="830.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0039a6" height="500.0" layoutX="-121.0" layoutY="-41.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="10.0" width="800.0" />
+    <AnchorPane layoutX="-116.0" layoutY="-38.0" minHeight="400.0" minWidth="700.0" prefHeight="491.0" prefWidth="790.0" style="-fx-background-color: #0039a6;">
+         <children>
+            <Circle fill="#0039a6" layoutX="240.0" layoutY="223.0" radius="188.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="25.0" />
+            <Circle fill="WHITE" layoutX="239.0" layoutY="222.0" radius="140.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="25.0" />
+            <Circle fill="#cc0000" layoutX="239.0" layoutY="222.0" radius="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="25.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cc0000" height="403.0" layoutX="486.0" layoutY="22.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" width="280.0" />
+            <AnchorPane layoutX="492.0" layoutY="33.0" prefHeight="377.0" prefWidth="267.0" style="-fx-background-color: cc0000;">
                <children>
-                  <AnchorPane layoutX="335.0" layoutY="20.0" prefHeight="377.0" prefWidth="267.0" style="-fx-background-color: #007AA5;">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0039a6" height="403.0" layoutX="-7.0" layoutY="-14.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="5.0" width="280.0" />
-                        <TextField fx:id="UserField" layoutX="18.0" layoutY="123.0" onAction="#login" prefHeight="25.0" prefWidth="238.0" promptText="Username:" style="-fx-background-color: #0039a6;">
-                           <effect>
-                              <Glow level="0.25" />
-                           </effect>
-                        </TextField>
-                        <PasswordField fx:id="PassField" layoutX="18.0" layoutY="188.0" onAction="#login" prefHeight="25.0" prefWidth="238.0" promptText="Password:" style="-fx-background-color: #0039a6;">
-                           <effect>
-                              <Glow level="0.25" />
-                           </effect>
-                        </PasswordField>
-                        <Button fx:id="LoginButton" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #0039a6;" text="Login" textFill="#b2b2b2">
-                           <effect>
-                              <Glow level="0.15" />
-                           </effect>
-                        </Button>
-                        <Button fx:id="CreateButton" layoutX="157.0" layoutY="292.0" mnemonicParsing="false" onAction="#Create" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #0039a6;" text="Create" textFill="#b2b2b2">
-                           <effect>
-                              <Glow level="0.15" />
-                           </effect>
-                        </Button>
-                        <Line endX="100.0" layoutX="133.0" layoutY="260.0" startX="-100.0" stroke="#cc0000" />
-                        <Label layoutX="61.0" text="Sign-In" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="MS Outlook" size="48.0" />
-                           </font>
-                        </Label>
-                        <Hyperlink layoutX="82.0" layoutY="340.0" text="Forgot Password?" />
-                     </children>
-                  </AnchorPane>
-                  <Ellipse fill="#0039a6" layoutX="167.0" layoutY="221.0" radiusX="130.0" radiusY="127.0" stroke="#cc0000" strokeType="INSIDE" strokeWidth="50.0" />
-                  <Circle fill="WHITE" layoutX="167.0" layoutY="221.0" radius="39.0" stroke="#666666" strokeType="INSIDE" strokeWidth="25.0" />
-                  <Label fx:id="Status" layoutX="22.0" layoutY="20.0" prefHeight="35.0" prefWidth="289.0" text="Label" textAlignment="CENTER" textFill="#007aa5">
+                  <TextField fx:id="UserField" layoutX="18.0" layoutY="123.0" onAction="#login" prefHeight="25.0" prefWidth="238.0" promptText="Username:" style="-fx-background-color: ffff;">
+                     <effect>
+                        <Glow level="0.25" />
+                     </effect>
+                  </TextField>
+                  <PasswordField fx:id="PassField" layoutX="18.0" layoutY="188.0" onAction="#login" prefHeight="25.0" prefWidth="238.0" promptText="Password:" style="-fx-background-color: ffff;">
+                     <effect>
+                        <Glow level="0.25" />
+                     </effect>
+                  </PasswordField>
+                  <Button fx:id="LoginButton" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ffcccc;" text="Login">
+                     <effect>
+                        <Glow level="0.15" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="CreateButton" layoutX="157.0" layoutY="292.0" mnemonicParsing="false" onAction="#Create" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ffcccc;" text="Create">
+                     <effect>
+                        <Glow level="0.15" />
+                     </effect>
+                  </Button>
+                  <Line endX="100.0" layoutX="133.0" layoutY="260.0" startX="-100.0" stroke="#cc0000" />
+                  <Label layoutX="61.0" text="Sign-In" textAlignment="CENTER" textFill="#666666">
                      <font>
-                        <Font size="20.0" />
+                        <Font name="MS Outlook" size="48.0" />
                      </font>
                   </Label>
+                  <Hyperlink layoutX="82.0" layoutY="340.0" text="Forgot Password?" />
                </children>
             </AnchorPane>
-        </items>
-      </SplitPane>
+            <Circle fill="WHITE" layoutX="239.0" layoutY="222.0" radius="39.0" stroke="#666666" strokeType="INSIDE" strokeWidth="25.0" />
+            <ImageView fitHeight="340.0" fitWidth="416.0" layoutX="32.0" layoutY="52.0">
+               <image>
+                  <Image url="@../../../../Pictures/panther.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

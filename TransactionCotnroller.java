@@ -114,10 +114,17 @@ package ViewLogin;
 		    	        	PassConf.setHeaderText("Password does not match");
 		    	        	return;
 		    	        }
+		    	        if(!City.getText().equals(Confirm)) {
+		    	        	Alert PassConf = new Alert (Alert.AlertType.ERROR);
+		    	        	PassConf.setTitle("Form Error!");
+		    	        	PassConf.setHeaderText("Enter a city");
+		    	        	return;
+		    	        }
+		    	        
 
 		    	       Alert Confirmation = new Alert(Alert.AlertType.CONFIRMATION);
-		    	       Confirmation.setTitle("Welcome");
-		    	       Confirmation.setHeaderText("Registration Succsesful");
+		    	       Confirmation.setTitle("Payment Succesful");
+		    	       Confirmation.setHeaderText("Transaction Succsesful");
 		    	       Confirmation.setContentText(FirstName.getText() + " " + LastName.getText());
 		    	       return;
 		    	    }

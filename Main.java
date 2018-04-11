@@ -21,8 +21,8 @@ public class Main extends Application {
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
-			primaryStage.setHeight(500);
-			primaryStage.setWidth(650);
+			primaryStage.setHeight(600);
+			primaryStage.setWidth(800);
 			primaryStage.show();
 			//LoginController.LoginButton.setOnAction(e -> Window.setScene(scene));
 		} catch(Exception e) {
