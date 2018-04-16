@@ -19,11 +19,9 @@ import javafx.stage.Stage;
 
 
 public class LoginController {
-	    @FXML 
-	    private Text actiontarget;
+	    @FXML private Text actiontarget;
 	
-	    @FXML
-	    private Label Status;
+	    @FXML private Label Status;
 	    
 	    @FXML static TextField UserField ;
 
@@ -42,20 +40,17 @@ public class LoginController {
 	       }
 	    }
 	    @FXML 
-	    public void Login(ActionEvent event) {
-	    	LoginButton.setOnAction(new EventHandler<ActionEvent>() {
-				@Override
-				public void handle(ActionEvent arg0) {
-					System.out.println("!");
-				}
-		    });
+	    public void Login(ActionEvent event) throws IOException { 
+	    	Parent Registration = FXMLLoader.load(getClass().getResource("Bookstore.fxml"));
+			Scene RegistrationScene = new Scene(Registration);
+			Stage window = (Stage) ((Node) (event.getSource())).getScene().getWindow();
+			window.setScene(RegistrationScene);
+			window.show();
 	    }
 		@FXML 
 		public void Create(ActionEvent event) throws IOException {
 			Parent Registration = FXMLLoader.load(getClass().getResource("Registration.fxml"));
 			Scene RegistrationScene = new Scene(Registration);
-			//Scene Registration = new Scene(Registration);
-	        //actiontarget.setText("Sign in button pressed");
 			Stage window = (Stage) ((Node) (event.getSource())).getScene().getWindow();
 			window.setScene(RegistrationScene);
 			window.show();
